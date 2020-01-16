@@ -19,6 +19,7 @@ public class DrawableCanvas : MonoBehaviour
         {
             m_CanvasImage = new Texture2D(1024, 1024);
         }
+        m_CanvasImage.filterMode = FilterMode.Point;
         GetComponent<RawImage>().texture = m_CanvasImage;
         ClearCanvas();
     }
